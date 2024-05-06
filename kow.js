@@ -177,7 +177,7 @@ console.log(kow)
 
 // let even = [];
 // let odd = [];
-// for (let i = 0; i < n.length; i++) {   
+// for (let i = 0; i < n.length; i++) {
 //     if(n[i] % 2 == 0){
 //         even.push(n[i]);
 //     }
@@ -186,12 +186,11 @@ console.log(kow)
 //     }
 // }
 // console.log(even);
-// console.log(odd)    
-
+// console.log(odd)
 
 //array Method
 
-// 1.length 
+// 1.length
 // 2.push
 // 3.pop
 // 4.shift
@@ -200,9 +199,9 @@ console.log(kow)
 // 7.sort
 // 8.reverse
 // 9.concat
-// 10.indexOf   
+// 10.indexOf
 // 11.lastIndexOf
-// 12.find  
+// 12.find
 // 13.filter
 // 14.map
 // 15.some
@@ -210,8 +209,6 @@ console.log(kow)
 // 17.reduce
 // 19.ForEach
 // 20.reduce
-
-
 
 // length
 
@@ -284,7 +281,6 @@ console.log(kow)
 
 // console.log(result)
 
-
 // 10.indexOf
 
 // let n = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -299,8 +295,83 @@ console.log(kow)
 //     sub:a-b
 //     }
 //     }
-    
+
 //     const resul = add(10,60)
-    
+
 //     console.log(resul)
 
+// 11.lastIndexOf
+// 12.find
+// 13.filter
+// 14.map
+// 15.some
+// 16.every
+// 17.reduce
+// 19.ForEach
+
+// const n = [1, 3, 5, 7, 9];
+
+//lastIndexOf
+
+// console.log(n.indexOf(1)) // First
+// console.log(n.lastIndexOf(1)) // Last
+
+//find
+// const result = n.find((element) => {
+//     // console.log(element);
+//   return element % 2 == 0;
+// });
+// console.log(result);
+
+//filter
+
+// const result = n.filter((element) => {
+//   console.log(element);
+//   return element % 2 == 0;
+// });
+
+// console.log(result);
+
+//map
+
+// const result = n.map((element) => {
+//     return element * 2;
+// })
+// console.log(result) // map return new array
+
+//ForEach
+
+// const result1 = n.forEach((element) => {
+// //   return element * 2; // forEach return undefined its not return new array
+//   console.log(element * 2);
+// });
+
+// // console.log(result1);
+
+//some
+
+//  const result = n.some((element) => {
+//  return element % 2 == 0;
+// })
+
+// console.log(result)
+
+//every
+
+//  const result = n.every((element) => {
+//    return element % 2 == 1;
+// })
+
+// console.log(result)
+
+//reduce
+// const n1 = [1, 2, 3, 4, 5];
+// const result = n1.reduce((accumulator, currentValue) => {
+// //   console.log(accumulator, currentValue);
+//   return accumulator + currentValue;
+// });
+
+// console.log(result);
+
+
+//DOM manipulation (HTML and CSS inbuilt) js add element  = DOM Means Document Object Model

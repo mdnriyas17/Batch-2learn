@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<style>
+.democlass {
+  color: red;
+}
+</style>
+
+<body>
+<h1 id="myH1">The Element Object</h1>
+<h2>The setAttribute() Method</h2>
+
+<p>Click "Add Class" to add a class attribute to the h1 element:</p>
+<p>The class attribute was added to this element.</p>
+
+<button onclick="myFunction()">Add Class</button>
+
+<script>
+function myFunction() {
+const para = document.createElement("p");
+  para.textContent = "The class attribute was added to this element.";
+  document.body.appendChild(para);
+//   document.querySelector("p").style.backgroundColor = "yellow";
+//   const stye = document.querySelectorAll("p")
+//   for (let i = 0; i < stye.length; i++) {
+//     stye[i].style.backgroundColor = "yellow";
+//   } // set attribute
+//   document.getElementById("myH1").setAttribute("class", "democlass"); // set attribute
+// const node = document.createElement("li");
+// const textnode = document.createTextNode("Water");
+// node.appendChild(textnode);
+// document.getElementById("myList").appendChild(node);
+// const node = document.getElementById("myList2").lastElementChild;
+// document.getElementById("myList1").appendChild(node);
+}
+</script>
+
+</body>
+</html>
