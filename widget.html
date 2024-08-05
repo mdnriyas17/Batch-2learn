@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foody</title>
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+
+
+
+
+  <!--5 end-->
+  <!--font-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!--zoho script-->
+
+  <script src="https://js.zohostatic.com/creator/widgets/version/1.0/widgetsdk-min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="script.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+</head>
+  
+
+
+<body>
+
+  <div class="white-rectangle">
+  <div class="container">
+    <div class="rounded-rectangle">
+    </div>
+    <div class="text-overlay">
+      New Vendor Addition Request
+    </div>
+    <div class="htmlSection" id="tfa_1">
+      <div class="htmlContent" id="tfa_1-HTML"><br><img style="max-width: 100%;" alt="logo"
+          src="https://i.postimg.cc/3w3zt9g9/Fi-Optix-Logo-black.png"><br>
+      </div>
+      <div>
+        <p>All companies performing labor as Subcontractors must complete the full Subcontractor approval process.</p>
+        <div>
+          <p>If the Vendor already exists in our systems, do NOT use this form. </p>
+        </div>
+        <div>For Material or Rental type of Vendors, please use the
+          <a target="_blank" href="https://qualtek.tfaforms.net/forms/view/22">CREDIT APPLICATION ONBOARDING FORM</a>
+        </div>
+        <br>
+      </div>
+      <form>
+        <div class="form-group clearfix zc-Name-group">
+          <label class="form-label zc-dem-clearfix zc-Name-label zc_picklist_label">
+            <span class="zc-label-text">Requester/Your Name</span>
+          </label>
+          <div class="form-field clearfix zc-Name-field">
+            <input type="text" class="zc-First-Name" id="ffirstname" name="Requester_Name.first_name" placeholder="First Name" required>
+            <input type="text" class="zc-Last-Name" id="llastname" name="Requester_Name.last_name" placeholder="Last Name" required><br><br>
+            <label for="email">Requester E-mail (Read Only):</label><br>
+            <input type="email" id="zc-Requester_Email_Read_Only" name="Requester_Email_Read_Only"><br><br>
+
+          </div>
+          <label for="title_owner">Requester Title (Read Only):</label><br>
+          <input type="text" id="zc-Requester_Title_Read_Only" name="Requester_Title_Read_Only" ><br><br>
+          <div>
+            <label for="company">Division/Entity:</label><br>
+            <select id="zc-Division_Entity" name="Division_Entity" required>
+              <option value="" disabled selected>Please select...</option> <!-- Placeholder option -->
+              <option value="QualTek LLC">QualTek LLC</option>
+              <option value="QualTek Fulfillment LLC">QualTek Fulfillment LLC</option>
+              <option value="QualTek Recovery LLC">QualTek Recovery LLC</option>
+              <option value="QualTek Renewables LLC">QualTek Renewables LLC</option>
+              <option value="QualTek Wireless LLC">QualTek Wireless LLC</option>
+              <option value="QualTek Wireline LLC">QualTek Wireline LLC</option>
+              <option value="Urban Cable Technology LLC">Urban Cable Technology LLC</option>
+              <option value="Concurrent Group, LLC (CON)">Concurrent Group, LLC (CON)</option>
+              <option value="FiOptix INC">FiOptix INC</option>
+            </select>
+            <br><br>
+            <div>
+              <label for="vendor_name">Vendor Name (Full Legal Name):</label><br>
+              <input type="text" id="firstname" name="Vendor_Name_Full_Legal_Name.first_name1" placeholder="First Name"
+                required>
+              <input type="text" id="lastname" name="Vendor_Name_Full_Legal_Name.last_name1" placeholder="Last Name"
+                required><br><br>
+            </div>
+            <div>
+              <fieldset id="contact_optional" class="section">
+                <legend id="contact_optional-2">
+                  <h2>Contact Information (Optional)</h2>
+                </legend>
+                <div>
+                  <label for="POC_name">Point of Contact Name:</label><br>
+                  <input type="text" id="pointfirstname" name="Point_of_Contact_Name.first_name2" placeholder="First Name">
+                  <input type="text" id="pointlastname" name="Point_of_Contact_Name.last_name2"
+                    placeholder="Last Name"><br><br>
+                </div>
+                <div>
+                  <label for="vendor_email">Vendor Email:</label><br>
+                  <input id="zc-Vendor_Email" class="form-control zc_textfield zc-Vendor_Email" maxlength="80"
+                    name="Vendor_Email" type="text"><br><br>
+                  <label for="vendor_phone">Phone Number:</label><br>
+                  <input id="zc-Vendor_Phone_Number"
+                    class="form-control textfield zc-Vendor_Phone_Number zc-elem-focus-field" name="Vendor_Phone_Number"
+                    type="tel" autocomplete="off" placeholder="201-555-0123" data-intl-tel-input-id="0"
+                    style="padding-left: 71px;">
+                  <br><br>
+                  <label for="vendor_phone">Fax Number:</label><br>
+                  <input id="zc-Vendor_FAX_Number"
+                    class="form-control textfield zc-Vendor_FAX_Number zc-elem-focus-field" name="Vendor_FAX_Number"
+                    type="tel" autocomplete="off" placeholder="201-555-0123" data-intl-tel-input-id="0"
+                    style="padding-left: 71px;">
+                </div>
+              </fieldset>
+              <fieldset id="SC_Information" class="section">
+                <legend id="contact_optional-2">
+                  <h2>Supplier Point of Contact Information (Optional)</h2>
+                </legend>
+                <p>Qualtek Wireless provides our Subcontractor partners with access to our Supplier Portal which can be
+                  used to view all Purchase Orders and Invoices issued between you and Qualtek Wireless. All invoices
+                  issued to Qualtek Wireless are required to be entered through this Portal. Please provide the name and
+                  e-mail address of the contact who will be setup to view the Portal and submit invoices.</p><br><br>
+                <div>
+                  <label for="Supplier_Point_of_Contact_Name">Supplier Point of Contact Name:</label><br>
+                  <input type="text" id="supplierfirstname" name="Supplier_Point_of_Contact_Name.first_name3"
+                    placeholder="First Name">
+                  <input type="text" id="supplierlastname" name="Supplier_Point_of_Contact_Name.last_name3"
+                    placeholder="Last Name"><br><br>
+                  <div>
+                    <label for="Supplier_Point_of_Contact_Email">Supplier PoC Email:</label><br>
+                    <input id="zc-Supplier_Point_of_Contact_Email"
+                      class="form-control zc_textfield zc-Supplier_Point_of_Contact_Email" maxlength="80"
+                      name="Supplier_Point_of_Contact_Email" type="text">
+                  </div><br>
+                  <label for="Supplier_Point_of_Contact_Phone_Number">Supplier PoC Phone Number:</label><br>
+                  <div><input id="zc-Supplier_Point_of_Contact_Phone_Number"
+                      class="form-control textfield zc-Supplier_Point_of_Contact_Phone_Number zc-elem-focus-field"
+                      name="Supplier_Point_of_Contact_Phone_Number" type="tel" autocomplete="off"
+                      placeholder="201-555-0123" data-intl-tel-input-id="1" style="padding-left: 71px;">
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset id="Vendor_Remit_to_Address" class="section">
+                <legend id="Vendor_Remit_to_Address-2">
+                  <h2>Vendor/Remit to Address</h2>
+                </legend>
+                <div>
+                  <label for="address_line_1">Address Line 1:</label>
+                  <input type="text" id="addressline_1" name="Address.address_line_1" required><br><br>
+                  <label for="address_line_1">Address Line :</label>
+                  <input type="text" id="addressline_2" name="Address.address_line_2"><br><br>
+
+                  <label for="city">City:</label>
+                  <input type="text" id="city" name="Address.district_city" required><br><br>
+
+                  <label for="state">State:</label>
+                  <select id="state" name="Address.state_province" required>
+                    <option value="" disabled selected>Choose State</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+
+                  </select><br><br>
+
+                  <label for="zip_code">Zip Code:</label>
+                  <input type="text" id="postal_code" name="Address.postal_Code" required><br><br>
+
+                  <label for="country">Country:</label>
+                  <input type="text" id="country" name="Address.country" placeholder="Country" required><br><br>
+                  <br><br>
+
+                </div>
+              </fieldset><br><br>
+              <div>
+                <label for="scope_of_work">Scope of Work:</label>
+                <input type="text" id="zc-Scope_of_Work" name="Scope_of_Work" required>
+                <p style="font-size: smaller;">Services that will be provided by this vendor.</p>
+                <br>
+                <div>
+                  <label for="payment_terms">Payment Terms:</label>
+                  <select id="paymentterms" name="payment_terms" required>
+                    <option value="" disabled selected>Please select...</option>
+                    <option value="Due Upon Receipt">Due Upon Receipt</option>
+                    <option value="Net 30">Net 30</option>
+                    <option value="Net 45">Net 45</option>
+                    <option value="Net 60">Net 60</option>
+                    <option value="Net 90">Net 90</option>
+                    <option value="Net 15">Net 15</option>
+                    <option value="Net 14">Net 14</option>
+                    <option value="Net 10">Net 10</option>
+                    <option value="Net 20">Net 20</option>
+                    <option value="Net 21">Net 21</option>
+                    <option value="Net 7">Net 7</option>
+                  </select>
+                </div><br>
+                <div>
+                  <label for="Tax_ID_Number">Tax ID Number (EIN - Only numbers/No spaces or dashes):</label>
+                  <input type="text" id="zc-Tax_ID_Number" name="Tax_ID_Number">
+                  <p style="font-size: smaller;">Please enter "Employee" if an individual.</p>
+                </div>
+                <div><br><br>
+                  <fieldset id="blank_section" class="section">
+                    <legend id="blank_section-2"></legend>
+                    <div><br>
+
+                    </div>
+                    <div>
+                      <label for="vendor_type">Vendor Type:</label>
+                      <select id="vendortype" name="vendor_type" required >
+                        <option value="" disabled selected>Please select...</option>
+                        <option value="Admin">Admin</option>
+                        <option value="Attorney">Attorney</option>
+                        <option value="Damage">Damage</option>
+                        <option value="Employee">Employee</option>
+                        <option value="Fleet">Fleet</option>
+                        <option value="Government">Government</option>
+                        <option value="Insurance">Insurance</option>
+                        <option value="Legal">Legal</option>
+                        <option value="Other">Other</option>
+                        <option value="Permits">Permits</option>
+                        <option value="Rent">Rent</option>
+                        <option value="Restoration/Traffic Control">Restoration/Traffic Control</option>
+                        <option value="Utility">Utility</option>
+                      </select>
+
+                  </fieldset><br>
+                  <fieldset id="Restoration_Traffic_Control" class="section">
+                    <div id="upload_fields" class="upload-fields">
+                      <label for="upload_field_1">Restoration/Traffic Control PO Conditions:</label>
+                      <input type="file" id="zc-Restoration_Traffic_Control_PO_Conditions_FILE" name="uploadFile"
+                        required><br><br>
+
+                      <label for="upload_field_2">Restoration/Traffic Control W-9 Upload:</label>
+                      <input type="file" id="zc-Restoration_Traffic_Control_W_9_Upload_FILE" name="uploadFile"
+                        required><br><br>
+
+                      <label for="upload_field_3">Restoration/Traffic Control COI Request:</label>
+                      <input type="file" id="zc-Restoration_Traffic_Control_COI_REQUEST_FILE" name="uploadFile"
+                        required><br><br>
+                  </fieldset><br><br>
+                  <div>
+                    <fieldset id="blank_section-2" class="section">
+                      <label for="one_check_per_invoice">One Check Per Invoice?</label><br>
+                      <input type="radio" id="ZC_U6ZC50_radioEl_zc-One_Check_Per_Invoice_1_0"
+                        name="One_Check_Per_Invoice" value="Yes" required>
+                      <label for="one_check_yes">Yes</label>
+                      <input type="radio" id="ZC_U6ZC50_radioEl_zc-One_Check_Per_Invoice_1_1"
+                        name="One_Check_Per_Invoice" value="No" required>
+                      <label for="one_check_no">No</label><br>
+                      <div><br>
+                        <label for="upload_field_4">W-9 Upload:</label><br>
+                        <input type="file" id="zc-W_9_Upload_FILE" name="uploadFile" required><br><br>
+                      </div><br>
+                      <div>
+                        <label for="1099_applicable">1099 Applicable?</label><br>
+                        <input type="radio" id="ZC_NOXEIV_radioEl_zc-Applicable_1_0" name="Applicable" value="Yes"
+                          required>
+                        <label for="1099_yes">Yes</label><br>
+                        <input type="radio" id="ZC_NOXEIV_radioEl_zc-Applicable_1_1" name="Applicable" value="No"
+                          required>
+                        <label for="1099_no">No</label><br>
+                      </div>
+                      <div><br><br>
+                        <label for="upload_another_file">Upload Another File?</label><br>
+                        <input type="radio" id="upload_yes" name="upload_another_file" value="Yes"
+                          >
+                        <label for="upload_yes">Yes</label><br>
+                        <fieldset id="blank_section-3" class="section">
+                          <label for="additional_upload"></label><br>
+                          <input type="file" id="additional_upload" name="additional_upload"><br><br>
+                          <br>
+                      </div>
+                  </div>
+                  </fieldset>
+                  <div>
+                    <label for="comments_instructions">Comments/Instructions:</label><br>
+                    <textarea id="5699313" name="Comments_Instructions" rows="6" cols="50"
+                      style="width: 332px; height: 121px;"></textarea>
+                    <p style="font-size: smaller;">Any details that will assist adding this vendor.</p><br><br>
+           
+                   
+
+                  </div>
+
+                  <a target="new" class="contactInfoLink" href="https://qualtek.tfaforms.net/forms/help/124"
+                    data-testid="contact-info-link">Contact Information</a>
+                    </div>
+      </form>
+      <button class="submit-button" id="SubmitReset" type="submit"
+      onclick="myfunctionAdd()">Submit</button>
+      
+</body>
+
+</html>

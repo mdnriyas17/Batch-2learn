@@ -1,0 +1,257 @@
+//introduction of javascript
+
+1.what is javascript
+2.History of javascript
+3.javascript version 
+4.javascript engine
+5.How to run javascript
+7.javascript engine
+
+//About javascript variable
+
+1.variable declration
+    1.let
+    2.const
+    3.var
+    
+2.hosting
+3.variable naming rule
+
+4.variable scope
+
+    block scope
+    function scope
+    global scope
+
+
+//Data types
+
+1.Primitive data types
+
+    1.number
+    2.string
+    3.boolean
+    4.bigint
+    5.null
+    6.undefined
+
+
+2.reference data types
+
+    1.array
+    2.object
+
+ //object 
+
+        1.Build in object
+        2.Object Prototype
+        3.prototypal inheritance
+
+3. Type of operator
+
+//Type casting 
+
+ 1.Type Conversion/Coercion
+ 2.implicit type casting
+ 3.explicit type casting
+
+
+//Date stracture
+
+ 1.Indexed collections
+    
+    1.typed array
+    2.arrays
+
+ 2.stracture Data
+        
+        1.Json
+
+ 3.keyed collections
+
+        1.map
+        2.set
+        3.weakmap
+        4.weakset
+
+ 4.structured data
+
+        1.tuple
+        2.struct
+
+
+//Equality Comparisons
+ 
+ 1.Value Comparison Operators
+
+        1.==
+        2.===
+        3.object.is
+ 
+ 2.Equality algorithms
+  
+        1.Strict Equality
+        2.Strict Inequality
+        3.Loose Equality
+        4.Loose Inequality
+        5.somevalueZero
+        6.somevalue
+
+
+//Loops and Iterations
+
+1.while loop
+2.for loop
+3.for in loop
+4.for of loop
+5.do while loop
+6.break and continue  ---> labled statement
+
+//Control Flow
+ 
+ 1.Conditional Statements
+  
+        1.if
+        2.else if
+        3.else
+        4.switch
+        5.ternary operator
+        6.nullish coalescing operator
+        7.conditional operator
+        8.??
+
+ 2.exception handling
+  
+  1.try catch
+  2.throw
+  3.finally
+  4.error
+
+
+//Expressions and Operators
+
+1.Operators
+
+    1.arithmetic
+    2.comparison
+    3.logical
+    4.bitwise
+    5.ternary
+    6.assignment
+    7.logical
+    8.bigint
+    9.string
+    10.comma
+    11.nullish coalescing
+    12.conditional
+    13.??
+    14.relational
+    15.unary operators
+    16.conditional
+
+
+//function
+
+1.Function Parameters
+  
+  1.defult parameter
+  2.rest parameter
+
+
+2.Arrow function
+
+3.IIFE function
+
+4.Arguments object
+
+5.Scope and function stack
+ 
+  1.Recursion
+  2.Closures
+  3.Lexical scoping
+
+6.Built in functions
+
+
+//Strict Mode
+
+1.Using this keyword
+ 
+ 1.function borrowing
+
+ 2.Explicit binding
+  
+  1.call
+  2.apply
+  3.bind
+
+3.this in a method
+
+4.this in a function
+
+5.Using this alone
+
+6.this in event handlers
+
+7.this in arrow functions
+
+
+//Asynchronous JavaScript
+
+1.settimeout
+
+2.setinterval
+
+3.promise
+  
+  1.async
+  2.await
+
+4.callback
+ 
+ callback hell
+
+
+
+//Working with APIs
+
+1.JSON
+2.XML
+3.fetch
+4.axios
+
+//Classes
+
+1.class
+2.constructor
+3.inheritance
+4.prototpe
+5.static
+
+
+//Iterators and Generators
+
+1.ITERATOR
+2.GENERATOR
+
+
+//Modules
+
+ 1.CommonJS
+ 2.ES6
+
+//Memory Management
+
+  1.Memory lifecycle
+  2.garbage collection
+
+
+// chrome dev tools 
+
+ 1.Heap
+ 2.Heap snapshot
+ 3.Heap profiler
+ 4.Debugging issues
+ 5.Debugging Memory Leaks
+ 6.Debugging performance
+

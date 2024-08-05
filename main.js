@@ -151,9 +151,6 @@
 
 // console.log(val(10, 20));
 
-
-
-
 // const bt = (a, b) => {
 //     return a + b
 // }
@@ -172,7 +169,6 @@
 //     console.log(a + b)
 // }))
 
-
 // const name1 = "demo user";
 
 // const val = async (name) => {
@@ -188,3 +184,229 @@
 // }
 
 // val(name1)
+
+// async function myDisplay() {
+//     console.log("start")
+//       let myPromise = new Promise(function(resolve) {
+//         setTimeout(function() {resolve("I love You !!");}, 3000);
+//       });
+//       console.log(await myPromise)
+//       console.log("end")
+//     }
+
+//     myDisplay();
+
+// const sum = (a, b) => {
+//   return a + b;
+// };
+
+// const sum1 = async (a, b) => {
+//   console.log("starting");
+//   let result = await new Promise((resolve) => {  /// wait for 2 second then resolve
+//     setTimeout(() => {
+//       resolve(sum(a, b));
+//     }, 2000);
+//   });
+//   console.log(result);
+//   console.log("end");
+// };
+
+// sum1(10, 20);
+
+// const sum2 = (a, b) => {
+//   console.log("starting");
+//   let result = setTimeout(() => {
+//     console.log("sum(a, b)");
+// }, 2000);
+//   console.log(result);
+//   console.log("end");
+// };
+
+// sum2(10, 20);
+
+// javascript is Async is line by line execution
+
+//set timeout  set interval
+
+//set timeout  ==  some second after which the function will be executed
+
+// window.setTimeout(function(){console.log('Hello')}, 3000)
+// window.console.log('Hello')
+// window.alert('Hello')
+// window.prompt('Hello')
+// window.confirm('Hello')
+// window.setInterval(function(){console.log('Hello')}, 3000)
+
+// window.console.log("Hello");
+// console.log("Hello1");
+
+// setTimeout(() => {
+//   console.log("Hello");
+// }, 10000);
+
+// setInterval(() => {
+//   console.log("Hello");
+// }, 1000);  // every 1 sec it will execute until we stop it
+
+// setTimeout(() => {
+//   console.log("Hello=======>");
+// },1000);
+
+//user login user name password login check if correct or not logout key password remove suppse screen off more then 30 mins session expired login again
+
+//api call
+
+//http request
+//ajax
+//fetch
+//axios
+
+//fetch
+
+// const url = "https://restcountries.com/v3.1/al?fields=name,flags";
+
+// const data = fetch(url)
+// .then((gg) => {
+//   return gg.json();
+// })
+
+// data.then((gg) => {
+//   console.log(gg);   //success
+// })
+
+// data.catch((gg) => {
+//   console.log(gg);   //error
+// })
+
+// axios
+
+// HTTP METHODS
+// GET  --> Read data
+// POST  ---> Create data send data
+// PUT  ---> Update data
+// DELETE  ---> Delete data
+// PATCH ---> Update part of data
+
+// const data = axios.post(url, {
+//   name: "kowshika",
+//   password: "kowshika123",
+// })
+
+// const data = axios.get(url, {
+//   _id: "6250d2a6e7e7b6b7a7b7b7b7",
+//   name: "kowshika",
+// })
+// data.then((gg) => {
+//   console.log(gg);
+// })
+
+// data.catch((gg) => {
+//   console.log(gg);
+// })
+
+// JSON ==> javascript object notation
+
+// const data = [
+//   {
+//     name: "kowshika",
+//     password: "kowshika123",
+//     age: 20,
+//     address: [
+//       {
+//         city: "kollam",
+//         state: "kollam",
+//         country: "india",
+//       },
+//     ],
+//     isaboveage18: true,
+//   },
+//   {
+//     name: "kowshika2",
+//     password: "kowshika123",
+//     age: 20,
+//     address: [
+//       {
+//         city: "kollam",
+//         state: "kollam",
+//         country: "india",
+//       },
+//     ],
+//     isaboveage18: true,
+//   },
+//   {
+//     name: "kowshika1",
+//     password: "kowshika123",
+//     age: 20,
+//     address: [
+//       {
+//         city: "kollam",
+//         state: "kollam",
+//         country: "india",
+//       },
+//     ],
+//     isaboveage18: true,
+//   },
+// ];
+// object in json format each key value pair is seperated by : easy to read and access
+
+// const data1 = JSON.stringify(data);
+// console.log(data1);
+
+// data.forEach((gg) => {
+//   console.log(gg.name);
+// });
+
+/*
+if(condition){
+    line of execution
+} else if(condition){
+    line of execution
+} else{
+    line of execution
+}
+*/
+
+// else if(this.innertext =="="){
+//     if(this.innertext==""){
+//         input.value = "0";
+//     }
+//     input.valur = eval(innertext.value);
+// }
+
+// const btn = [
+//   "7",
+//   "8",
+//   "9",
+//   "*",
+//   "4",
+//   "5",
+//   "6",
+//   "-",
+//   "1",
+//   "2",
+//   "3",
+//   "+",
+//   "0",
+//   "00",
+//   ".",
+//   "/",
+//   "C",
+//   "←",
+//   "%",
+//   "=",
+//   "ftyfffut",
+// ];
+
+// for (let i = 0; i < btn.length; i++) {
+//   console.log(btn[i]);
+// }
+
+
+
+var typr = new Typed    ("#typed", {
+  strings: ["kowshika", "neew", "demo"],
+  typeSpeed: 100,
+  backSpeed: 100,
+  backDelay: 1000,
+  loop: true
+  })

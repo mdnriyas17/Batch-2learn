@@ -1,14 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>The Element Object</h1>
-    <div id="root"></div>
-    <script src="main.js">
-    </script>
-</body>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(33, 254, 181);
+      }
+      .container {
+        margin: 50px auto;
+        max-width: 1280px;
+        width: 100%;
+        height: 720px;
+        background-color: white;
+      }
+      header {
+        padding: 30px;
+        width: 100%;
+        box-sizing: border-box;
+        height: 100px;
+        background-color: inherit;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .logo {
+        color: rgba(137, 197, 204, 1);
+      }
+      ul {
+        display: flex;
+        list-style: none;
+      }
+      li {
+        margin-left: 20px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        padding: auto;
+      }
+      .active {
+        color: rgba(137, 197, 204, 1);
+      }
+
+      main {
+        position: relative;
+        left: 106px;
+        top: 109px;
+        display: flex;
+        max-width: 1052px;
+        width: 100%;
+        height: 515px;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      section {
+        position: relative;
+        align-items: center;
+        width: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <div class="logo">treine.me</div>
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section>
+          <div>
+          <div style="width: 500px;">
+            <h1>workouts made</h1>
+            <h1>exclusive for you!</h1>
+          </div>
+            <p>
+              We create exclusive and unique workouts for you.<br />
+              Invest in your body and get much more performance<br />
+              and quality of life.
+            </p>
+            <button style="background-color:#69B99D; width: 169px; height: 56px; border-radius: 4px">Whats App</button>
+          </div>
+        </section>
+        <section>
+          <h1>Head</h1>
+        </section>
+      </main>
+    </div>
+    <script>
+      if(n%3 ==0){
+        console.log("divisible by 3")
+      } else if(n%5 ==0){
+        console.log("divisible by 5")
+      } else {
+        console.log("not divisible by 3 or 5")
+      }
+      </script>
+  </body>
 </html>

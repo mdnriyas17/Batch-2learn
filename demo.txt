@@ -1,0 +1,134 @@
+// Front End Developer
+
+1. HTML ===> Hypertext Markup Language it is used to create website strcuture
+
+2. css its used to style the website
+
+3. Javascript ==> JavaScript is used to add interactivity to the website 
+
+4. React  ==> Ui user interface HTML,CSS,JavaScript it cannot refesh the page reload to improve performance
+
+// Back End Developer
+
+1. Node js ===> It is used to create server 
+2. Express js  ===> freme work for node js
+
+3.core java ===> It is used to create server
+4.Spring boot ===> freme work for core java
+
+// Database Developer
+
+1. MongoDB  ===> It is used to store database No SQL or unstrcuture query language
+2. sql  ===> It is used to store database its a strcuture query language
+
+1.figma ===> It is used to design website 
+2.Photoshop ===> It is used to design website or edit photo or video
+
+
+
+1.Front End Developer work on HTML,CSS,JavaScript,React
+
+  1.JavaScript developer
+  2.React Developer
+  3.Front End Developer
+
+2. Back End Developer work on core java,Spring boot,SQL
+
+  1. Database Developer work on sql
+  2. Back End Developer work on core java,Spring boot
+  3. java developer
+
+3.web developer work on figma,photoshop,HTML,CSS,JavaScript,React
+ 
+  1. web developer
+  2. JavaScript developer
+  3. Front End Developer
+  4. web designer
+  5. Photoshop developer
+  6. Figma developer
+  7. UI/UX designer
+
+4.MERN stack developer work on MongoDB,Express.js,React.js,Node.js
+
+  1. MERN stack developer
+  2. JavaScript developer
+  3. Front End Developer
+  4. Back End Developer
+  5. Database Developer
+  6. web developer
+  7. React Developer
+  8. Node.js Developer
+
+5. Full stack developer work on HTML,CSS,JavaScript,React,core java,Spring boot,SQL
+
+  1. Full stack developer
+  2. JavaScript developer
+  3. Front End Developer
+  4. Back End Developer
+  5. Database Developer
+  6. web developer
+  7. React Developer
+  8. java developer
+
+
+
+  // javascript
+
+  1.variable declration
+  2.Data types
+  3.operators
+  4.for loop
+  5.switch case
+  6.Function ==> normal function , arrow function 
+
+1.settimeout
+
+2.setinterval
+
+3.promise
+  
+  1.async
+  2.await
+
+4.callback
+
+
+1.map
+
+2.filter
+
+3.reduce
+
+4.find
+
+5.forEach
+
+6.some
+
+7.every
+
+8.sort
+
+9.reverse
+
+10.indexOf
+
+11.lastIndexOf
+
+12.slice
+
+13.splice
+
+14.join
+
+15.concat
+
+16.toString
+
+17.valueOf
+
+18.includes
+
+19.trim
+
+20.split

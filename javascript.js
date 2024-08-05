@@ -446,9 +446,7 @@ console.log(result)
 // console.log(n);
 // console.log(res);
 
-
 // ternary operator
-
 
 // let a = 9
 
@@ -465,8 +463,6 @@ console.log(result)
 // const result = a%2 == 0 ? "a is greater than 5" : "a is less than 5";
 // console.log(result)
 
-
-
 //array method
 //1.Map
 //2.Filter
@@ -477,21 +473,18 @@ console.log(result)
 //7. if else
 //8. switch case
 
-
 // const names = "lax";
 
 // const result = names ? names=="abhishek" ? "name is abhishek" : `name is not ${names}` : "not found";
 
 // console.log(result);
 
-
 // document.getElementById("result").innerHTML = result
 //innerHTML or innerText
-//createElement, 
+//createElement,
 // setAttribute
 // querySelector vs querySelectorAll
 // appendChild vs append
-
 
 // const para = document.createElement("p");  // <p></p> para tag
 // para.innerHTML = "<b>hello</b><i>world</i>";
@@ -500,13 +493,12 @@ console.log(result)
 // headingtag.innerText = "The class attribute was added to this element.";
 // document.getElementById("result").appendChild(headingtag);
 
-
 // const para = document.createElement("p");
 // para.innerText = "The class attribute was added to this element.";
 // document.getElementById("result").appendChild(para);
 // para.setAttribute("class", "democlass");
 // para.setAttribute("id", "myH1");
-// const single = document.querySelector("#result");  // body tag 1st tag 
+// const single = document.querySelector("#result");  // body tag 1st tag
 // console.log(single);
 // document.querySelector(".democlass").style.backgroundColor = "yellow";  //id
 // const stye = document.querySelectorAll("p");   //body tag all tag
@@ -522,136 +514,191 @@ console.log(result)
 // const ta = document.querySelectorAll("p")
 // console.log("querySelectorAll",ta)
 
-
-//createElement //4 
+//createElement //4
 // appendChild //2
 // append //2
 // setAttribute //4 class and id
 // querySelector // 1 vs querySelectorAll // 4
 
-const maindiv = document.createElement("div");
-maindiv.setAttribute("id", "root");
-maindiv.setAttribute("class", "root");
-document.body.appendChild(maindiv);
+// const maindiv = document.createElement("div");
+// maindiv.setAttribute("id", "root");
+// maindiv.setAttribute("class", "root");
+// document.body.appendChild(maindiv);
 
-const root = document.getElementById("root");
+// const root = document.getElementById("root");
 
-//create heading
-const heading = document.createElement("h1");
-heading.innerText = "Calculator";
-root.appendChild(heading);
-const headingstyle = document.querySelector("h1");
-headingstyle.style.textAlign = "center";
-headingstyle.style.marginBottom = "20px";
+// //create heading
+// const heading = document.createElement("h1");
+// heading.innerText = "Calculator";
+// root.appendChild(heading);
+// const headingstyle = document.querySelector("h1");
+// headingstyle.style.textAlign = "center";
+// headingstyle.style.marginBottom = "20px";
 
-//create input
-const input = document.createElement("input");
-input.type = "text";
-input.setAttribute("id", "input");
-input.setAttribute("readonly", "true");
-root.appendChild(input);
-const inputstyle = document.querySelector("#input");
-inputstyle.style.width = "100%";
-inputstyle.style.padding = "10px";
-inputstyle.style.fontSize = "20px";
-inputstyle.style.textAlign = "right";
-inputstyle.style.boxShadow = " 0 2px 5px rgba(0, 0, 0, 0.3) inset";
-inputstyle.style.borderRadius = "5px";
-//create buttons
+// //create input
+// const input = document.createElement("input");
+// input.type = "text";
+// input.setAttribute("id", "input");
+// input.setAttribute("readonly", "true");
+// root.appendChild(input);
+// const inputstyle = document.querySelector("#input");
+// inputstyle.style.width = "100%";
+// inputstyle.style.padding = "10px";
+// inputstyle.style.fontSize = "20px";
+// inputstyle.style.textAlign = "right";
+// inputstyle.style.boxShadow = " 0 2px 5px rgba(0, 0, 0, 0.3) inset";
+// inputstyle.style.borderRadius = "5px";
+// //create buttons
 
-const parentbtn = document.createElement("div");
-parentbtn.setAttribute("id", "buttons");
+// const parentbtn = document.createElement("div");
+// parentbtn.setAttribute("id", "buttons");
 
-root.appendChild(parentbtn);
-const styleforbtn = document.querySelector("#buttons");
-styleforbtn.style.display = "grid";
-styleforbtn.style.gridTemplateColumns = "repeat(4, 1fr)";
-styleforbtn.style.gridGap = "10px";
-styleforbtn.style.margin = "10px";
-//create button
-const btn = [
-  "7",
-  "8",
-  "9",
-  "*",
-  "4",
-  "5",
-  "6",
-  "-",
-  "1",
-  "2",
-  "3",
-  "+",
-  "0",
-  "00",
-  ".",
-  "/",
-  "C",
-  "←",
-  "%",
-  "=",
-];
+// root.appendChild(parentbtn);
+// const styleforbtn = document.querySelector("#buttons");
+// styleforbtn.style.display = "grid";
+// styleforbtn.style.gridTemplateColumns = "repeat(4, 1fr)";
+// styleforbtn.style.gridGap = "10px";
+// styleforbtn.style.margin = "10px";
+// //create button
+// const btn = [
+//   "7",
+//   "8",
+//   "9",
+//   "*",
+//   "4",
+//   "5",
+//   "6",
+//   "-",
+//   "1",
+//   "2",
+//   "3",
+//   "+",
+//   "0",
+//   "00",
+//   ".",
+//   "/",
+//   "C",
+//   "←",
+//   "%",
+//   "=",
+// ];
 
-for (let i = 0; i < btn.length; i++) {
-  const button = document.createElement("button");
-  button.innerText = btn[i];
-  button.setAttribute("id", btn[i]);
-  button.setAttribute("value", btn[i]);
-  parentbtn.appendChild(button);
-}
-const buttonall = document.querySelectorAll("button");
-for (let i = 0; i < buttonall.length; i++) {
- buttonall[i].style.width = "100%";
- buttonall[i].style.padding = "10px";
-buttonall[i].style.fontSize = "24px";
-buttonall[i].style.boxShadow = " 0 2px 5px rgba(0, 0, 0, 0.3) inset";
-buttonall[i].style.borderRadius = "5px";
-buttonall[i].style.border = "none";
-buttonall[i].style.cursor = "pointer";
-buttonall[i].style.textAlign = "center";
-buttonall[i].style.backgroundColor = "#f2f2f2";
-buttonall[i].style.color = "#333";
-buttonall[i].style.transition = "all 0.3s ease";
-buttonall[i].style.outline = "none";
-buttonall[i].style.userSelect = "none";
-buttonall[i].style.boxSizing = "border-box";
-buttonall[i].style.fontFamily = "Arial, sans-serif";
+// for (let i = 0; i < btn.length; i++) {
+//   const button = document.createElement("button");
+//   button.innerText = btn[i];
+//   button.setAttribute("id", btn[i]);
+//   button.setAttribute("value", btn[i]);
+//   parentbtn.appendChild(button);
+// }
 
-buttonall[i].addEventListener("onmousehover", function() {
-  this.style.backgroundColor = "lightgray"; 
-  this.style.color = "black";
-});
+// const buttonall = document.querySelectorAll("button");
 
-buttonall[i].addEventListener("onmouseleave", function() {
-  if(this.value !== "=") {
-    this.style.backgroundColor = ""; 
-  this.style.color = ""; 
-  } else {
-    this.style.backgroundColor = "orange";
-    this.style.color = "white";
-  }
-});     
-}
+// for (let i = 0; i < buttonall.length; i++) {
+//   buttonall[i].style.width = "100%";
+//   buttonall[i].style.padding = "10px";
+//   buttonall[i].style.fontSize = "24px";
+//   buttonall[i].style.boxShadow = " 0 2px 5px rgba(0, 0, 0, 0.3) inset";
+//   buttonall[i].style.borderRadius = "5px";
+//   buttonall[i].style.border = "none";
+//   buttonall[i].style.cursor = "pointer";
+//   buttonall[i].style.textAlign = "center";
+//   buttonall[i].style.backgroundColor = "#f2f2f2";
+//   buttonall[i].style.color = "#333";
+//   buttonall[i].style.transition = "all 0.3s ease";
+//   buttonall[i].style.outline = "none";
+//   buttonall[i].style.userSelect = "none";
+//   buttonall[i].style.boxSizing = "border-box";
+//   buttonall[i].style.fontFamily = "Arial, sans-serif";
 
-const equl = document.querySelector("#buttons > button[value='=']");
-equl.style.backgroundColor = "orange";
-equl.style.color = "white";
-const buttonsEl = document.querySelectorAll("button");
-const inputFieldEl = document.getElementById("input"); 
+//   buttonall[i].addEventListener("onmousehover", function () {
+//     style.backgroundColor = "lightgray";
+//     style.color = "black";
+//   });
 
-for (let i = 0; i < buttonsEl.length; i++) {
-buttonsEl[i].addEventListener("click", () => {
-const buttonValue = buttonsEl[i].innerText; 
-if (buttonValue === "C") {
-inputFieldEl.value = "";
-}  else if (buttonValue === "DEL") {
-inputFieldEl.value = inputFieldEl.value.slice(0, -1);
-}
+//   buttonall[i].addEventListener("onmouseleave", function () {
+//     if (this.value !== "=") {
+//       this.style.backgroundColor = "";
+//       this.style.color = "";
+//     } else {
+//       this.style.backgroundColor = "orange";
+//       this.style.color = "white";
+//     }
+//   });
+// }
 
-else if (buttonValue === "=") {
-inputFieldEl.value = eval(inputFieldEl.value);
-} else {
-inputFieldEl.value += buttonValue; 
-}
-});
-}
+// const equl = document.querySelector("#buttons > button[value='=']");
+// equl.style.backgroundColor = "orange";
+// equl.style.color = "white";
+// const buttonsEl = document.querySelectorAll("button");
+// const inputFieldEl = document.getElementById("input");
+
+// for (let i = 0; i < buttonsEl.length; i++) {
+//   buttonsEl[i].addEventListener("click", () => {
+//     const buttonValue = buttonsEl[i].innerText;
+//     if (buttonValue === "C") {
+//       inputFieldEl.value = "";
+//     } else if (buttonValue === "←") {
+//       inputFieldEl.value = inputFieldEl.value.slice(0, -1);
+//     } else if (buttonValue === "=") {
+//       if (inputFieldEl.value === "") {
+//         inputFieldEl.value = "0";
+//       } else {
+//         inputFieldEl.value = eval(inputFieldEl.value);
+//       }
+//     } else {
+//       inputFieldEl.value += buttonValue;
+//     }
+//   });
+// }
+
+// if(learn == "Batch 2learn"){
+//   if(length.length==0){
+//     if(length.length == 0){
+//       "hh"
+//     } else {
+//       'hgh'
+//     }
+//   } else {
+//     "hhh"
+//   }
+// } else(
+//   "hhhh"
+// )
+
+// For loop switch case and if else   ===> Kowsalya
+
+// Switch case  ===> //Karthi
+
+// map for loop switch case if else  ===> Komathi
+
+// no practice  ===> Kaviya
+
+//For loop
+
+// let n = 10;
+
+// let result = 0;
+
+// for (let i = 1; i <= n; i++) {
+//   result += i;
+// }
+// console.log(result);
+
+//switch case
+
+// const learn = "Batch learn";
+
+// switch (learn) {
+//   case "Batch 2learn":
+//     console.log("Batch 2learn");
+//     break;
+//   case "Batch 3learn":
+//     console.log("Batch 3learn");
+//     break;
+//   default:
+//     console.log("Not found");
+// }
+
+
+
+// 

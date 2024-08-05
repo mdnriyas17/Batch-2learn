@@ -156,3 +156,34 @@
 //    result += i
 // }
 // console.log(result)
+
+// The Dance of the Elements
+// const button = document.getElementById("magicButton");
+
+// button.addEventListener("click", () => {
+//   console.log("Button clicked! Let the magic begin!");
+// });
+
+// // Additional events for an interactive ballet
+// button.addEventListener("mouseover", () => {
+//   console.log("The magic button feels the presence of the cursor!");
+// });
+
+// button.addEventListener("mouseout", () => {
+//   console.log("The magic button bids farewell to the cursor!");
+// });
+
+// window.addEventListener("resize", () => {
+//   console.log("The window has resized! The magic adapts!");
+// });
+
+const rootdiv = document.getElementById("root");
+const btn = document.createElement("button");
+btn.setAttribute("id", "btn");
+const ankerta = document.createElement("a");
+ankerta.setAttribute("href", "index.html");
+ankerta.innerHTML = "click";
+btn.appendChild(ankerta);
+rootdiv.appendChild(btn);
+
+
